@@ -55,6 +55,10 @@ header {
   overflow: hidden;
 }
 
+
+
+
+
 /* ----------- Media and responsive -------------- */
 
 /* 0 - 600 */
@@ -94,7 +98,7 @@ header {
     display: none;
   }
 
-  .TopNavBar{
+  .TopNavBar  {
     position: sticky;
     display: flex;
     flex-direction: row;
@@ -105,6 +109,14 @@ header {
     top: 3dvh;
     z-index: 998;
   }
+
+  /* .logoImg button {
+    
+  }
+
+  .Accounts button{
+border-radius: 50%;
+  } */
 
   .NavBarMobile svg,
   .NavBarMobile img {
@@ -156,6 +168,8 @@ header {
   .button:hover {
     transform: translateY(-3px);
   }
+
+
 }
 
 /* 601 - 768 / Tablet*/
