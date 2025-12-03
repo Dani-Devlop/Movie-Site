@@ -27,7 +27,7 @@ header {
 }
 
 /*  Nav Bar  */
-.NavBarDesktop ul {
+.NavBar ul {
   list-style-type: none;
   display: inline-flex;
   flex-direction: column;
@@ -37,12 +37,12 @@ header {
   padding: 0;
 }
 
-.NavBarDesktop ul li a {
+.NavBar ul li a {
   text-decoration: none;
   color: rgb(22, 7, 7);
 }
 
-.NavBarDesktop ul li a:hover {
+.NavBar ul li a:hover {
   background-color: #111111;
 }
 
@@ -69,15 +69,17 @@ header {
     background-color: #111111;
     padding: 0.3rem;
     border-radius: 50%;
+    position:sticky;
   }
 
   .Accounts svg {
     width: auto;
+    position: sticky;
     height: auto;
     /* border-radius: 50%; */
     margin: 0.2rem 0.7rem 0px 0px;
     overflow: hidden;
-    background-color: #111111;
+    background-color: #c90505;
     width: 1.5rem;
     height: 1.5rem;
     padding: 0.3rem;
@@ -87,20 +89,12 @@ header {
   header {
     background-color: transparent;
     margin-top: 5px;
-    position: sticky;
-    top: 5px;
-    z-index: 999;
   }
-  .NavBarDesktop {
+  .NavBar {
     display: none;
   }
   .SearchButton {
     display: none;
-  }
-
-  .NavBarMobile{
-    color: aqua;
-    background-color: rgb(243, 243, 58);
   }
 }
 
