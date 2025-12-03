@@ -85,17 +85,25 @@ header {
   }
   /* NavBar Down */
   header {
-    background-color: transparent;
-    margin-top: 5px;
-    position: sticky;
-    top: 5px;
-    z-index: 999;
+    display: none;
   }
   .NavBarDesktop {
     display: none;
   }
   .SearchButton {
     display: none;
+  }
+
+  .TopNavBar{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    /* margin-top: 5px; */
+    position: sticky;
+    top: 3dvh;
+    z-index: 998;
   }
 
   .NavBarMobile svg,
@@ -115,10 +123,10 @@ header {
     width: 30px !important;
   }
 
-  /* .soccer-icon g { */
-  /* transform: translate(200, 0) scale(2) !important; */
-  /* } */
   .NavBarMobile {
+    position: sticky;
+    top: 90dvh;
+    /* bottom: 100dvh; */
     display: flex;
     background-color: rgb(0, 0, 0);
     width: 70%;
