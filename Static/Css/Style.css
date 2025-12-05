@@ -107,31 +107,34 @@ header {
   width: 100%;
   height: 1px;
   background: #97720d;
-  margin: 15px 0;
+  margin: 8px 0;
   margin-right: 1rem;
 }
 
 /* Button */
 
-.hero-buttons{
+.hero-buttons {
+  
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 10px;
 }
 .btn-First {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 0 10px;
-  color:white;
+  gap: 5px;
+  padding: 0 0.4rem;
+  color: #f6cd0e;
   text-shadow: 2px 2px rgb(116, 116, 116);
   text-transform: uppercase;
   cursor: pointer;
   border: solid 2px black;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-weight: 600;
   font-size: 17px;
-  background-color: #e7be24;
+  background-color: black;
   border-radius: 50px;
   position: relative;
   overflow: hidden;
@@ -175,6 +178,66 @@ header {
   transition-delay: 300ms;
 }
 
+/*  */
+
+.btn-secondary {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 10px;
+  background: #000000;
+  color: white;
+  fill: rgb(155, 153, 153);
+  /* padding: 0.1em 0.5em 0.1em 0.5em; */
+  /* padding-left: 0.9em; */
+  padding-right: 0.3rem;
+  padding-left: 0.2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+}
+
+.btn-secondary span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.textSecond {
+  display: flex;
+  font-weight: 600;
+  font-size: 10px;
+}
+.btn-secondary svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background: #000;
+}
+
+.btn-secondary:hover .svg-wrapper {
+  transform: scale(1.25);
+  transition: 0.5s linear;
+}
+
+.btn-secondary:hover svg {
+  transform: translateX(2.4em) scale(1.1);
+  fill: #fff;
+}
+
+.btn-secondary:hover span {
+  opacity: 0;
+  transition: 0.5s linear;
+}
+
+.btn-secondary:active {
+  transform: scale(0.95);
+}
 
 /* ----------- Media and responsive -------------- */
 
@@ -182,6 +245,9 @@ header {
 /* Only Screen for before the 90's if " Only Screen " doesn't exist in our code they see mobile version on their Pc */
 /* Orientation is when turn the phone horizontally : portrait */
 @media only screen and (max-width: 600px) and (orientation: portrait) {
+  main{
+    background-color: #8f44d4a1 ;
+  }
   .logoImg svg {
     width: 1.5rem;
     height: 1.5rem;
@@ -268,7 +334,7 @@ border-radius: 50%;
     -webkit-box-shadow: 0px 5px 9px 2px rgba(0, 0, 0, 0.432);
     margin: 0 auto;
     padding: 0.1rem 0;
-    display: none;
+    /* display: none; */
   }
   .button {
     outline: 0 !important;
