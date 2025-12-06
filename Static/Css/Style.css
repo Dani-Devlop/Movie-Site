@@ -4,9 +4,15 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: inherit;
 }
 
-html{
+@font-face {
+  font-family: headerMobile; /* set name */
+  src: url(./Font/rush-driver.italic.otf); /* url of the font */
+}
+
+html {
   scroll-behavior: smooth;
 }
 /* Header */
@@ -14,18 +20,18 @@ html{
 header {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0 0.2rem;
+  gap: clamp(0.3rem, 1.5vw, 0.8rem);
+  padding: 0 clamp(0.1rem, 1vw, 0.3rem);
   flex-direction: row;
   background-color: aqua;
   justify-content: space-between;
-  border-radius: 1.5rem;
+  border-radius: clamp(1rem, 2vw, 1.5rem);
 }
 
 .logoImg svg {
   width: auto;
   height: auto;
-  margin: 0.2rem 0px 0px 0.7rem;
+  margin: clamp(0.1rem, 0.8vw, 0.2rem) 0px 0px clamp(0.4rem, 1.5vw, 0.8rem);
   overflow: hidden;
 }
 
@@ -54,7 +60,7 @@ header {
   width: auto;
   height: auto;
   /* border-radius: 50%; */
-  margin: 0.2rem 0.7rem 0px 0px;
+  margin: clamp(0.1rem, 0.8vw, 0.2rem) clamp(0.4rem, 1.5vw, 0.8rem) 0px 0px;
   overflow: hidden;
 }
 /* 
@@ -70,14 +76,13 @@ header {
   /* padding-bottom: 60px; */
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
-  padding: 0px 1px 0px 0px;
-  /* gap: 20px; */
+  /* margin-top: clamp(15px, 3vw, 25px); */
+  padding: 0px clamp(0.5px, 1vw, 2px) 0px 0px;
 }
 
 .Hero-Banner {
-  width: 170px;
-  height: 200px;
+  width: clamp(140px, 25vw, 200px);
+  height: clamp(170px, 30vw, 280px);
   object-fit: fill;
 }
 .hero-content {
@@ -94,24 +99,25 @@ header {
 .metadata {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 0.2rem 0.2rem;
-  gap: 1rem;
-  font-size: 0.6rem;
+  gap: clamp(0.5rem, 2vw, 1rem); /* این رو کمتر کردم */
+  font-size: clamp(0.65rem, 2vw, 0.85rem);
   color: #97720d;
 }
 
 .descrip {
-  font-size: 0.7rem;
+  font-size: clamp(0.75rem, 2.2vw, 1rem);
   color: #97720d;
   padding-right: 1rem;
 }
 
 .separator {
   width: 100%;
-  height: 1px;
+  height: clamp(0.5px, 0.3vw, 1.5px);
   background: #97720d;
-  margin: 8px 0;
-  margin-right: 1rem;
+  margin: clamp(5px, 1.2vw, 12px) 0;
+  margin-right: clamp(0.5rem, 1.5vw, 1.2rem);
 }
 
 /* Button */
@@ -119,29 +125,28 @@ header {
 .hero-buttons {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
-  margin-bottom: 10px;
+  gap: clamp(0.8rem, 2.5vw, 1.2rem);
+  margin-bottom: clamp(8px, 1.5vw, 12px);
 }
 .btn-First {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  /* padding: 0 0.4rem; */
+  gap: clamp(4px, 1.5vw, 8px);
   color: #f6cd0e;
   text-shadow: 2px 2px rgb(116, 116, 116);
   text-transform: uppercase;
   cursor: pointer;
-  border: solid 2px black;
-  letter-spacing: 0.5px;
+  border: solid clamp(1px, 0.5vw, 2px) black;
+  letter-spacing: clamp(0.4px, 1vw, 0.6px);
   font-weight: 600;
-  font-size: 17px;
+  font-size: clamp(1rem, 2.2vw, 1.3rem);
   background-color: black;
   border-radius: 50px;
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease;
-  padding: 0.2rem 0.5rem;
+  padding: clamp(0.18rem, 1.2vw, 0.28rem) clamp(0.45rem, 2vw, 0.65rem);
 }
 
 .btn-First:active {
@@ -188,31 +193,29 @@ header {
   text-transform: uppercase;
   font-family: inherit;
   font-weight: 600;
-  font-size: 10px;
+  font-size: clamp(0.75rem, 1.8vw, 0.95rem);
   background: #000000;
   color: white;
   fill: rgb(155, 153, 153);
-  /* padding: 0.1em 0.5em 0.1em 0.5em; */
-  /* padding-left: 0.9em; */
-  padding-right: 0.3rem;
-  padding-left: 0.2rem;
+  padding-right: clamp(0.25rem, 1.2vw, 0.4rem);
+  padding-left: clamp(0.15rem, 1.2vw, 0.25rem);
   display: flex;
   align-items: center;
   cursor: pointer;
   border: none;
-  border-radius: 1rem;
+  border-radius: clamp(0.9rem, 1.8vw, 1.1rem);
 }
 
 .btn-secondary span {
   display: block;
-  margin-left: 0.3em;
+  margin-left: clamp(0.25em, 1.2vw, 0.4em);
   transition: all 0.3s ease-in-out;
 }
 
 .textSecond {
   display: flex;
   font-weight: 600;
-  font-size: 10px;
+  font-size: clamp(0.75rem, 1.8vw, 0.95rem);
 }
 .btn-secondary svg {
   display: block;
@@ -257,34 +260,36 @@ header {
 
 .MoiveCards h2 {
   font-size: clamp(1.4rem, 4vw, 1.8rem);
-  margin-bottom: clamp(20px, 4vw, 30px);
+  margin-bottom: clamp(10px, 1vw, 25px);
   color: rgb(255, 255, 255);
   font-weight: 700;
 }
 
+.first-titile {
+  margin-top: clamp(5px, 1vw, 25px);
+}
 /* Horizontal Scroll Container */
 .movies-container {
   display: flex;
   gap: clamp(12px, 2vw, 20px);
   overflow-x: auto;
   overflow-y: hidden;
-  padding: clamp(10px, 2vw, 15px) 0px clamp(10px, 2vw, 15px)
-    clamp(5px, 1vw, 15px);
+  padding: clamp(10px, 1.5vw, 15px) 0px clamp(10px, 1.5vw, 15px)
+    clamp(8px, 1.5vw, 15px);
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   color: white;
-  /* background-color: #473b3b41; */
-  border-radius: 0.4rem 0px 0.4rem 0px;
+  border-radius: clamp(0.3rem, 1vw, 0.4rem) 0px clamp(0.3rem, 1vw, 0.4rem) 0px;
 }
 
 /* Scrollbar Style */
 .movies-container::-webkit-scrollbar {
-  height: 8px;
+  height: clamp(6px, 1vw, 10px);
 }
 
 .movies-container::-webkit-scrollbar-track {
   background: #1a1a1a;
-  border-radius: 10px;
+  border-radius: clamp(8px, 1.5vw, 12px);
 }
 
 .movies-container::-webkit-scrollbar-thumb {
@@ -308,8 +313,9 @@ header {
 }
 
 .movie-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 10px 20px 6px rgba(255, 215, 0, 0.2);
+  transform: translateY(clamp(-6px, -1vw, -10px));
+  box-shadow: 0px clamp(6px, 1.5vw, 10px) clamp(12px, 2vw, 20px)
+    clamp(3px, 0.8vw, 6px) rgba(255, 215, 0, 0.2);
 }
 
 /* Movie Poster - Responsive Height */
@@ -355,14 +361,80 @@ header {
   font-size: clamp(0.75rem, 1.5vw, 0.9rem);
 }
 
-
+.TopNavBar,
+.NavBarMobile {
+  display: none;
+}
 
 /* ----------- Media and responsive -------------- */
 
 /* 0 - 600 */
 /* Only Screen for before the 90's if " Only Screen " doesn't exist in our code they see mobile version on their Pc */
 /* Orientation is when turn the phone horizontally : portrait */
-@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+/* @media  only screen and (max-width:365)  and (orientation: portrait) {
+  .metadata{
+    margin-bottom: 20px;
+    background-color: #667eea;
+  }
+} */
+
+@media only screen and (max-width: 394px) and (orientation: portrait) {
+  .HeroBanner {
+    flex-direction: column;
+    padding: clamp(15px, 2.5vw, 25px);
+    min-height: auto;
+    gap: clamp(15px, 2vw, 20px);
+    justify-content: center; 
+    align-items: center;
+  }
+
+  .Hero-Banner {
+    display: none; 
+  }
+
+  .hero-content {
+    width: 100%;
+    gap: clamp(12px, 1.5vw, 18px);
+    text-align: center; 
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.8rem, 5.5vw, 2.5rem);
+    line-height: clamp(2rem, 6vw, 2.8rem);
+  }
+
+  .metadata {
+    gap: clamp(0.8rem, 2vw, 1.2rem);
+    font-size: clamp(0.6rem, 1.8vw, 0.8rem);
+    justify-content: center;
+
+  .descrip{
+    font-size: clamp(0.65rem, 1.8vw, 0.85rem);
+    padding-right: 0;
+  }
+
+  .hero-buttons {
+    gap: clamp(0.6rem, 2vw, 0.9rem);
+    margin-top: clamp(10px, 2vw, 15px);
+    justify-content: center; 
+  }
+
+  .separator {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+}
+@media only screen and (max-width: 750px) and (orientation: portrait) {
+  .SiteName {
+    color: #ffd700;
+    font-family: headerMobile;
+    user-select: none;
+    text-shadow: 0rem 0rem 3rem #ffd90085;
+    letter-spacing: 0.2rem;
+  }
   .movies-container {
     gap: clamp(10px, 2vw, 15px);
   }
@@ -381,6 +453,7 @@ header {
     background-color: #111111;
     padding: 0.3rem;
     border-radius: 50%;
+    position: sticky;
   }
 
   .Accounts svg {
@@ -406,26 +479,61 @@ header {
   .SearchButton {
     display: none;
   }
-
-  .TopNavBar {
-    position: sticky;
+ .TopNavBar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: transparent;
-    /* margin-top: 5px; */
-    position: sticky;
-    top: 3dvh;
-    z-index: 998;
   }
 
-  /* .logoImg button {
-    
+  .SiteName {
+    position: static;
+    flex: 1;
+    text-align: center;
+    color: #ffd700;
+    font-family: headerMobile;
+    user-select: none;
+    text-shadow: 0rem 0rem 3rem #ffd90085;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    margin-top: 10px;
   }
 
-  .Accounts button{
-border-radius: 50%;
-  } */
+  .logoImg {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 999;
+    width: auto;
+    height: auto;
+    background-color: transparent; 
+    padding: 0;  
+    border-radius: 0;  
+  }
+
+  .logoImg svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .Accounts {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+    width: auto;
+    height: auto;
+    background-color: transparent;  
+    padding: 0;  
+    border-radius: 0;  
+    margin: 0;
+  }
+
+  .Accounts svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 
   .NavBarMobile svg,
   .NavBarMobile img {
@@ -446,26 +554,25 @@ border-radius: 50%;
 
   .NavBarMobile {
     position: sticky;
-    top: 90dvh;
-    /* bottom: 100dvh; */
+    top: clamp(85dvh, 90dvh, 95dvh);
     display: flex;
     background-color: rgb(0, 0, 0);
-    width: 70%;
-    height: 28px;
+    width: clamp(65%, 75vw, 85%);
+    height: clamp(24px, 5vw, 35px);
     align-items: center;
     justify-content: space-around;
-    border-radius: 1em;
-    box-shadow: 0px 5px 9px 2px rgba(0, 0, 0, 0.308);
-    -webkit-box-shadow: 0px 5px 9px 2px rgba(0, 0, 0, 0.432);
+    border-radius: clamp(0.8rem, 1.5vw, 1.2rem);
+    box-shadow: 0px clamp(3px, 1vw, 5px) clamp(6px, 1.5vw, 9px)
+      clamp(1px, 0.5vw, 2px) rgba(0, 0, 0, 0.308);
+    -webkit-box-shadow: 0px clamp(3px, 1vw, 5px) clamp(6px, 1.5vw, 9px)
+      clamp(1px, 0.5vw, 2px) rgba(0, 0, 0, 0.432);
     margin: 0 auto;
-    padding: 0.1rem 0;
-    /* display: none; */
+    padding: clamp(0.05rem, 0.5vw, 0.1rem) 0;
+    z-index: 1;
   }
   .button {
     outline: 0 !important;
     border: 0 !important;
-    /* width: 20px; */
-    /* height: 20px; */
     border-radius: 50%;
     background-color: transparent;
     display: flex;
@@ -476,7 +583,7 @@ border-radius: 50%;
     cursor: pointer;
   }
   .button:hover {
-    transform: translateY(-3px);
+    transform: translateY(clamp(-2px, -0.5vw, -4px));
   }
 }
 
