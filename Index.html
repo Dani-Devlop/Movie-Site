@@ -9,7 +9,6 @@
   </head>
   <body>
     <header>
-      <!-- Logo without name -->
       <div class="logoImg">
         <svg
           width="24px"
@@ -42,9 +41,8 @@
           </g>
         </svg>
       </div>
-      <!-- <div class="MainHeader"> -->
+
       <div class="NavBarDesktop">
-        <!-- Nav -->
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
@@ -60,34 +58,105 @@
           </ul>
         </nav>
       </div>
-      <!-- Search Button -->
-      <div class="SearchButton">
-        <!-- Just a Search Without any Function  -->
-        <!-- in future with when we click on it , pump up the box search -->
-        <button type="button">Search</button>
-      </div>
-      <!-- </div> -->
 
-      <!-- Account for  -->
-      <div class="Accounts">
-        <svg
-          viewBox="0 0 24 24"
-          width="24"
-          height="24"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="black"
-          stroke="#ffd700"
-          stroke-width="1.8"
-          stroke-linecap="round"
-          stroke-linejoin="round">
-          <circle cx="12" cy="12" r="9" />
-          <circle cx="12" cy="9" r="3" />
-          <path d="M7 17c1.3-2 2.9-3 5-3s3.7 1 5 3" />
-        </svg>
-        <div class="Login"></div>
-        <div class="Sign Up"></div>
+      <div class="header-action">
+        <form>
+          <input
+            type="search"
+            id="query"
+            name="q"
+            placeholder="Search..."
+            aria-label="Search through site content" />
+          <button type="submit" class="searchbox">
+            <svg
+              height="64px"
+              width="64px"
+              version="1.1"
+              id="_x32_"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512"
+              xml:space="preserve"
+              fill="white">
+              <g stroke-width="0"></g>
+              <g stroke-linecap="round" stroke-linejoin="round"></g>
+              <g>
+                <!-- <style type="text/css">
+                  .st0 {
+                    fill: #ffd700;
+                  }
+                  .st0:focus-within{
+                    fill: #ffd700;
+                  }
+                </style> -->
+                <g>
+                  <path
+                    class="st0"
+                    d="M498.211,423.825L382.399,308.004l-11.347,11.367l-19.634-19.674c21.876-32.374,32.881-69.984,32.852-107.535 c0.029-49.182-18.727-98.489-56.239-135.972C290.617,18.717,241.309-0.029,192.109,0c-49.142-0.029-98.45,18.756-135.884,56.19 C18.761,93.673-0.025,142.932,0.005,192.133c-0.029,49.181,18.756,98.469,56.19,135.913 c37.493,37.483,86.772,56.239,135.933,56.239c37.561,0,75.2-11.026,107.585-32.852l19.642,19.642l-11.327,11.299l115.811,115.822 C432.954,507.36,445.101,512,457.112,512c11.961,0,24.108-4.64,33.252-13.804l7.847-7.837c9.135-9.135,13.765-21.282,13.785-33.292 C511.995,445.097,507.346,432.969,498.211,423.825z M192.128,358.452c-42.669,0-85.231-16.183-117.683-48.674 c-32.443-32.433-48.646-74.975-48.646-117.644c0-42.679,16.222-85.231,48.664-117.674c32.453-32.443,74.995-48.664,117.645-48.664 c42.679,0,85.24,16.202,117.683,48.664c32.463,32.443,48.656,74.995,48.674,117.674c-0.019,42.669-16.211,85.211-48.654,117.644 C277.349,342.269,234.788,358.452,192.128,358.452z M316.957,338.234c3.772-3.226,7.516-6.58,11.123-10.158 c3.587-3.588,6.912-7.331,10.167-11.132l17.606,17.625l-21.28,21.29L316.957,338.234z M479.943,472.109l-7.818,7.818 c-4.193,4.183-9.544,6.191-15.033,6.23c-5.478,0-10.821-2.048-15.012-6.2l-97.554-97.563l37.874-37.854l97.543,97.544 c4.182,4.202,6.2,9.534,6.2,14.984C486.143,462.566,484.105,467.928,479.943,472.109z"></path>
+                  <path
+                    class="st0"
+                    d="M277.467,106.765c-23.504-23.494-54.475-35.29-85.339-35.27c-30.844,0-61.815,11.776-85.348,35.27 c-23.504,23.523-35.299,54.504-35.27,85.368c-0.029,30.854,11.766,61.844,35.27,85.299c23.533,23.542,54.504,35.328,85.329,35.328 c30.864,0,61.834-11.786,85.358-35.309c23.533-23.522,35.299-54.464,35.299-85.318C312.795,161.27,300.999,130.318,277.467,106.765 z M262.249,262.234c-19.341,19.341-44.676,29.021-70.14,28.992c-25.434,0-50.77-9.651-70.112-28.992 c-19.331-19.331-28.962-44.648-28.962-70.101c0-25.444,9.631-50.781,28.962-70.141c19.371-19.331,44.678-28.973,70.131-29.002 c25.444,0.029,50.78,9.7,70.121,29.002c19.332,19.36,28.973,44.697,28.992,70.141C291.241,217.586,281.599,242.903,262.249,262.234 z"></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </form>
       </div>
+
+      <details class="auth-dropdown">
+        <summary class="summary-trigger">
+          <div class="Accounts">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="black"
+              stroke="#ffd700"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9" />
+              <circle cx="12" cy="9" r="3" />
+              <path d="M7 17c1.3-2 2.9-3 5-3s3.7 1 5 3" />
+            </svg>
+          </div>
+        </summary>
+
+        <div class="dropdown-menu">
+          <a href="#login" class="dropdown-item">
+            Login
+            <svg
+              class="arrow-icon"
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+
+          <a href="#signup" class="dropdown-item">
+            Sign Up
+            <svg
+              class="arrow-icon"
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </details>
+
+
     </header>
+
     <main>
       <!-- <div class="Top"> -->
       <!-- NavBar Mobile -->
@@ -374,8 +443,8 @@
       <!-- </div> -->
 
       <!-- Movie Card Tree -->
-    <section class="MoiveCards">
-      <h2 class="first-titile">New Series & Movies</h2>
+      <section class="MoiveCards">
+        <h2 class="first-titile">New Series & Movies</h2>
         <div class="movies-container">
           <article class="movie-card">
             <div class="movie-poster">
@@ -475,294 +544,292 @@
                 alt="Movie" />
             </div>
             <div class="movie-info">
-              <div class="movie-title">Robin Hood </div>
+              <div class="movie-title">Robin Hood</div>
               <div class="movie-rating">⭐ 6.3/10</div>
             </div>
           </article>
         </div>
-    </section>
+      </section>
 
+      <section class="MoiveCards">
+        <h2>Top Rated Movies</h2>
+        <div class="movies-container">
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNThiYTQzOTUtNmFjYy00OWEwLTg2NWUtMmM3NGE0YjFjOWRjXkEyXkFqcGc@._V1_QL75_UX217.5_.jpg"
+                alt="The Matrix" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">The Matrix</div>
+              <div class="movie-rating">⭐ 8.7/10</div>
+            </div>
+          </article>
 
-    <section class="MoiveCards">
-      <h2>Top Rated Movies</h2>
-      <div class="movies-container">
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BNThiYTQzOTUtNmFjYy00OWEwLTg2NWUtMmM3NGE0YjFjOWRjXkEyXkFqcGc@._V1_QL75_UX217.5_.jpg"
-              alt="The Matrix" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">The Matrix</div>
-            <div class="movie-rating">⭐ 8.7/10</div>
-          </div>
-        </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNmQyZTMwNTMtM2U0Yy00YTM4LWJmZTgtZWIyYzdjODY4NGY4XkEyXkFqcGc@._V1_QL75_UX217.5_.jpg"
+                alt="Kill Bill" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Kill Bill</div>
+              <div class="movie-rating">⭐ 8.5/10</div>
+            </div>
+          </article>
 
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BNmQyZTMwNTMtM2U0Yy00YTM4LWJmZTgtZWIyYzdjODY4NGY4XkEyXkFqcGc@._V1_QL75_UX217.5_.jpg"
-              alt="Kill Bill" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Kill Bill</div>
-            <div class="movie-rating">⭐ 8.5/10</div>
-          </div>
-        </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BODI2M2FjNzItY2Q3Zi00NzdjLThmYTktY2Q2YzdiMGViMTc1XkEyXkFqcGc@._V1_QL75_UX229.5_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Inception</div>
+              <div class="movie-rating">⭐ 8.8/10</div>
+            </div>
+          </article>
 
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BODI2M2FjNzItY2Q3Zi00NzdjLThmYTktY2Q2YzdiMGViMTc1XkEyXkFqcGc@._V1_QL75_UX229.5_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Inception</div>
-            <div class="movie-rating">⭐ 8.8/10</div>
-          </div>
-        </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMjMwMjUzNjc3Nl5BMl5BanBnXkFtZTgwOTk3MTQ3MjE@._V1_QL75_UX220.5_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Interstellar</div>
+              <div class="movie-rating">⭐ 8.7/10</div>
+            </div>
+          </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BYzZmODUwZjItMmJkZS00ODFiLWI1ZjEtZWY0YjY0ZWQxMWVlXkEyXkFqcGc@._V1_QL75_UX220.5_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">The Dark Knight</div>
+              <div class="movie-rating">⭐ 9.1/10</div>
+            </div>
+          </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BYjBiOWE1NTAtZDgzZC00NDZjLWE3YmItMDJhMDY2ZGY0MDQ0XkEyXkFqcGc@._V1_QL75_UX234_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">The Godfather</div>
+              <div class="movie-rating">⭐ 9.2/10</div>
+            </div>
+          </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMTY5NDA4Mzk4OF5BMl5BanBnXkFtZTcwMzY1MjkyMQ@@._V1_QL75_UX327_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Spirited Away</div>
+              <div class="movie-rating">⭐ 8.6/10</div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BMjMwMjUzNjc3Nl5BMl5BanBnXkFtZTgwOTk3MTQ3MjE@._V1_QL75_UX220.5_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Interstellar</div>
-            <div class="movie-rating">⭐ 8.7/10</div>
-          </div>
-        </article>
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BYzZmODUwZjItMmJkZS00ODFiLWI1ZjEtZWY0YjY0ZWQxMWVlXkEyXkFqcGc@._V1_QL75_UX220.5_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">The Dark Knight</div>
-            <div class="movie-rating">⭐ 9.1/10</div>
-          </div>
-        </article>
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BYjBiOWE1NTAtZDgzZC00NDZjLWE3YmItMDJhMDY2ZGY0MDQ0XkEyXkFqcGc@._V1_QL75_UX234_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">The Godfather</div>
-            <div class="movie-rating">⭐ 9.2/10</div>
-          </div>
-        </article>
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BMTY5NDA4Mzk4OF5BMl5BanBnXkFtZTcwMzY1MjkyMQ@@._V1_QL75_UX327_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Spirited Away</div>
-            <div class="movie-rating">⭐ 8.6/10</div>
-          </div>
-        </article>
-      </div>
-    </section>
+      <section class="MoiveCards">
+        <h2>Top Rated Series</h2>
+        <div class="movies-container">
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMTczMTY0MTMzOV5BMl5BanBnXkFtZTcwNDQxMTk4Nw@@._V1_QL75_UX222_.jpg"
+                alt="The Matrix" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Breaking Bad</div>
+              <div class="movie-rating">⭐ 9.5/10</div>
+            </div>
+          </article>
 
-    <section class="MoiveCards">
-      <h2>Top Rated Series</h2>
-      <div class="movies-container">
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BMTczMTY0MTMzOV5BMl5BanBnXkFtZTcwNDQxMTk4Nw@@._V1_QL75_UX222_.jpg"
-              alt="The Matrix" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Breaking Bad</div>
-            <div class="movie-rating">⭐ 9.5/10</div>
-          </div>
-        </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BYzU0ZjY1MmQtNThiMi00NDI3LTljNDMtYTVjYTc2MzQ4Mzk5XkEyXkFqcGc@._V1_QL75_UX229.5_.jpg"
+                alt="Kill Bill" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Game of Thrones</div>
+              <div class="movie-rating">⭐ 9.2/10</div>
+            </div>
+          </article>
 
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BYzU0ZjY1MmQtNThiMi00NDI3LTljNDMtYTVjYTc2MzQ4Mzk5XkEyXkFqcGc@._V1_QL75_UX229.5_.jpg"
-              alt="Kill Bill" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Game of Thrones</div>
-            <div class="movie-rating">⭐ 9.2/10</div>
-          </div>
-        </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMTY5ODk1NzUyMl5BMl5BanBnXkFtZTgwMjUyNzEyMTE@._V1_QL75_UX217.5_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Attack on Titan</div>
+              <div class="movie-rating">⭐ 9.1/10</div>
+            </div>
+          </article>
 
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BMTY5ODk1NzUyMl5BMl5BanBnXkFtZTgwMjUyNzEyMTE@._V1_QL75_UX217.5_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Attack on Titan</div>
-            <div class="movie-rating">⭐ 9.1/10</div>
-          </div>
-        </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BZTUyZGJkNGUtOTQyMy00NGVhLTkwODMtMjEyYWRjYmI1MmFmXkEyXkFqcGc@._V1_QL75_UX229.5_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Rick and Morty</div>
+              <div class="movie-rating">⭐ 9.0/10</div>
+            </div>
+          </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BYmIzMmQ1ZmMtYmNiNS00Nzc4LTljYmMtNjJjYTBjNTdiMGFjXkEyXkFqcGc@._V1_QL75_UX246_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Clarkson's Farm</div>
+              <div class="movie-rating">⭐ 9.0/10</div>
+            </div>
+          </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BZDQzMWMwZWMtMjY2ZS00NmE2LTlhNmEtYWRkMmM1OWU2NzU3XkEyXkFqcGc@._V1_QL75_UX231_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Narcos</div>
+              <div class="movie-rating">⭐ 8.7/10</div>
+            </div>
+          </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BZjRiYTI4OWQtZmUzMi00NTdiLTkxZWMtZDkwNGE5MDlmZTlkXkEyXkFqcGc@._V1_QL75_UX234_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Peaky Blinders</div>
+              <div class="movie-rating">⭐ 8.7/10</div>
+            </div>
+          </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BZjNlOTMyNzEtZTNmNC00YTdjLTlhOWYtNTFmMzQ0ZTIyNjg0XkEyXkFqcGc@._V1_QL75_UX217.5_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">The Walking Dead</div>
+              <div class="movie-rating">⭐ 8.1/10</div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BZTUyZGJkNGUtOTQyMy00NGVhLTkwODMtMjEyYWRjYmI1MmFmXkEyXkFqcGc@._V1_QL75_UX229.5_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Rick and Morty</div>
-            <div class="movie-rating">⭐ 9.0/10</div>
-          </div>
-        </article>
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BYmIzMmQ1ZmMtYmNiNS00Nzc4LTljYmMtNjJjYTBjNTdiMGFjXkEyXkFqcGc@._V1_QL75_UX246_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Clarkson's Farm</div>
-            <div class="movie-rating">⭐ 9.0/10</div>
-          </div>
-        </article>
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BZDQzMWMwZWMtMjY2ZS00NmE2LTlhNmEtYWRkMmM1OWU2NzU3XkEyXkFqcGc@._V1_QL75_UX231_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Narcos</div>
-            <div class="movie-rating">⭐ 8.7/10</div>
-          </div>
-        </article>
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BZjRiYTI4OWQtZmUzMi00NTdiLTkxZWMtZDkwNGE5MDlmZTlkXkEyXkFqcGc@._V1_QL75_UX234_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Peaky Blinders</div>
-            <div class="movie-rating">⭐ 8.7/10</div>
-          </div>
-        </article>
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BZjNlOTMyNzEtZTNmNC00YTdjLTlhOWYtNTFmMzQ0ZTIyNjg0XkEyXkFqcGc@._V1_QL75_UX217.5_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">The Walking Dead</div>
-            <div class="movie-rating">⭐ 8.1/10</div>
-          </div>
-        </article>
-      </div>
-    </section>
+      <section class="MoiveCards">
+        <h2>Coming Soon</h2>
+        <div class="movies-container">
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNGJlODUxZjctM2IxMS00NTYxLWI4ZGItMTFmOGRiNGRjYjcyXkEyXkFqcGc@._V1_QL75_UX124.5_.jpg"
+                alt="The Matrix" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Toy Story 5</div>
+              <div class="movie-rating">Comming soon</div>
+            </div>
+          </article>
 
-    <section class="MoiveCards">
-      <h2>Coming Soon</h2>
-      <div class="movies-container">
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BNGJlODUxZjctM2IxMS00NTYxLWI4ZGItMTFmOGRiNGRjYjcyXkEyXkFqcGc@._V1_QL75_UX124.5_.jpg"
-              alt="The Matrix" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Toy Story 5</div>
-            <div class="movie-rating">Comming soon</div>
-          </div>
-        </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQV_HQ6-i16brGJ8dfPgUM0pZvq_8bjNCIpw&s"
+                alt="Kill Bill" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Spider-Man: Brand New Day</div>
+              <div class="movie-rating">Comming soon</div>
+            </div>
+          </article>
 
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQV_HQ6-i16brGJ8dfPgUM0pZvq_8bjNCIpw&s"
-              alt="Kill Bill" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Spider-Man: Brand New Day</div>
-            <div class="movie-rating">Comming soon</div>
-          </div>
-        </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BYTIxMTYxY2YtMGMxNi00Y2U0LWE5OWYtMDNjZDYzODIwOGU4XkEyXkFqcGc@._V1_QL75_UX220.5_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Scream 7</div>
+              <div class="movie-rating">Comming soon</div>
+            </div>
+          </article>
 
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BYTIxMTYxY2YtMGMxNi00Y2U0LWE5OWYtMDNjZDYzODIwOGU4XkEyXkFqcGc@._V1_QL75_UX220.5_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Scream 7</div>
-            <div class="movie-rating">Comming soon</div>
-          </div>
-        </article>
-
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BMTZiOGFlM2MtOTlhYy00NTRmLWFkNWQtOGE5ZDM5M2U3Njc0XkEyXkFqcGc@._V1_QL75_UX124.5_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Minions 3</div>
-            <div class="movie-rating">Comming soon</div>
-          </div>
-        </article>
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BNmNkNmRkNDAtOTMzNC00MWYzLWJhNjMtYjNkZTNjODVhOTg2XkEyXkFqcGc@._V1_QL75_UX220.5_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Shrek 5</div>
-            <div class="movie-rating">Comming soon</div>
-          </div>
-        </article>
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BNmI4YWM2MzktYjNjNy00YmM1LThhNmItOWM1ODkzMDYyZTk0XkEyXkFqcGc@._V1_QL75_UX207_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">The Super Mario Galaxy Movie</div>
-            <div class="movie-rating">Comming soon</div>
-          </div>
-        </article>
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BNDMyNDJhMjMtZTc4My00MGExLWJjN2MtNWRlNWJmMjcyOTZlXkEyXkFqcGc@._V1_QL75_UX261_.jpg"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Mortal Kombat II</div>
-            <div class="movie-rating">Comming soon</div>
-          </div>
-        </article>
-        <article class="movie-card">
-          <div class="movie-poster">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeNAWvsGQyi0FJrnFS-UrWtRI_6zjdQXrYPQ&s"
-              alt="Movie" />
-          </div>
-          <div class="movie-info">
-            <div class="movie-title">Terrifier 4</div>
-            <div class="movie-rating">Comming soon</div>
-          </div>
-        </article>
-      </div>
-    </section>
-
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMTZiOGFlM2MtOTlhYy00NTRmLWFkNWQtOGE5ZDM5M2U3Njc0XkEyXkFqcGc@._V1_QL75_UX124.5_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Minions 3</div>
+              <div class="movie-rating">Comming soon</div>
+            </div>
+          </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNmNkNmRkNDAtOTMzNC00MWYzLWJhNjMtYjNkZTNjODVhOTg2XkEyXkFqcGc@._V1_QL75_UX220.5_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Shrek 5</div>
+              <div class="movie-rating">Comming soon</div>
+            </div>
+          </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNmI4YWM2MzktYjNjNy00YmM1LThhNmItOWM1ODkzMDYyZTk0XkEyXkFqcGc@._V1_QL75_UX207_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">The Super Mario Galaxy Movie</div>
+              <div class="movie-rating">Comming soon</div>
+            </div>
+          </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNDMyNDJhMjMtZTc4My00MGExLWJjN2MtNWRlNWJmMjcyOTZlXkEyXkFqcGc@._V1_QL75_UX261_.jpg"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Mortal Kombat II</div>
+              <div class="movie-rating">Comming soon</div>
+            </div>
+          </article>
+          <article class="movie-card">
+            <div class="movie-poster">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeNAWvsGQyi0FJrnFS-UrWtRI_6zjdQXrYPQ&s"
+                alt="Movie" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">Terrifier 4</div>
+              <div class="movie-rating">Comming soon</div>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="logoName"></div>
