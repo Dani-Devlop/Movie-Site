@@ -127,7 +127,7 @@ form:focus-within {
 /* .st0:focus-within , .st0:hover , .st0:has(input){
   fill: #ffd700;
 } */
- 
+
 input {
   all: unset;
   font: 16px system-ui;
@@ -277,8 +277,6 @@ input:focus {
 .dropdown-item:hover .arrow-icon {
   transform: translateX(4px);
 }
-
-
 
 /* .Accounts svg:hover {
     background: rgba(0, 0, 0, 0.1);
@@ -810,6 +808,73 @@ input:focus {
   }
   .button:hover {
     transform: translateY(clamp(-2px, -0.5vw, -4px));
+  }
+  /* .auth-dropdown {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+  } */
+
+  .summary-trigger {
+    padding: 0;
+  }
+
+  .Accounts {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .Accounts svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0;
+  }
+
+  /* Dropdown Menu Mobile */
+  .dropdown-menu {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    left: auto;
+    background: #ffd700;
+    border-radius: 8px;
+    min-width: 160px;
+    width: auto;
+    margin: 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    animation: slideDown 0.3s ease;
+    z-index: 1000;
+  }
+
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 12px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .dropdown-item:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-item:active {
+    background: #ffed4e;
+    transform: translateX(2px);
+  }
+
+  .arrow-icon {
+    width: 14px;
+    height: 14px;
   }
 }
 

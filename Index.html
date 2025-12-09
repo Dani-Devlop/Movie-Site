@@ -193,26 +193,58 @@
           <!-- </button> -->
         </div>
         <h1 class="SiteName">Film Flix</h1>
-        <div class="Accounts">
-          <!-- <button> -->
-          <svg
-            viewBox="0 0 24 24"
-            width="24"
-            height="24"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="black"
-            stroke="#ffd700"
-            stroke-width="1.8"
-            stroke-linecap="round"
-            stroke-linejoin="round">
-            <circle cx="12" cy="12" r="9" />
-            <circle cx="12" cy="9" r="3" />
-            <path d="M7 17c1.3-2 2.9-3 5-3s3.7 1 5 3" />
-          </svg>
-          <div class="Login"></div>
-          <div class="Sign Up"></div>
-          <!-- </button> -->
+         <details class="auth-dropdown">
+        <summary class="summary-trigger">
+          <div class="Accounts">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="black"
+              stroke="#ffd700"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9" />
+              <circle cx="12" cy="9" r="3" />
+              <path d="M7 17c1.3-2 2.9-3 5-3s3.7 1 5 3" />
+            </svg>
+          </div>
+        </summary>
+
+        <div class="dropdown-menu">
+          <a href="#login" class="dropdown-item">
+            Login
+            <svg
+              class="arrow-icon"
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+
+          <a href="#signup" class="dropdown-item">
+            Sign Up
+            <svg
+              class="arrow-icon"
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
         </div>
+      </details>
+
+
       </div>
 
       <div class="NavBarMobile">
